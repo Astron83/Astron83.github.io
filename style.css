@@ -1,37 +1,3 @@
-body {
-	background-color: blue;
-}
+<style>
 
-h1 {
-	color: white;
-}
-
-.title {
-	color: black;
-}
-
-#test {
-	color: yellow;
-	font-weight: bold;
-}
-
-.title.small {
-	font-size: 50%;
-}
-
-p,
-h1 {
-	border: 2px solid white;
-}
-
-.rodzic p {
-	font-size: large;
-}
-
-p:hover {
-	color: violet;
-}
-
-p {
-	transition: all 3s;
-}
+</style>
