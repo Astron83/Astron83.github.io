@@ -391,3 +391,20 @@ overflow: auto;
 .article{
     padding: 20px;
 }
+/*.school-wrapper:hover .school-description{
+    height: 100px;
+}*/
+.school-wrapper.active .school-description{
+    height: 100px;
+}
+.school-title{
+    background-color: rgb(209, 111, 46);
+    border: slateblue;
+    cursor: pointer;
+    padding: 10px;
+}
+.school-description{
+    height:0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
