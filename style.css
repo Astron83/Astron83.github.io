@@ -350,8 +350,11 @@
 .wrapper{
     display: flex;
     margin: 0;
+    height: 100vh;
+    overflow: hidden;
 }
 .navigation{
+    width: 400px;
     background: rgba(113,206,240,1);
     background: -moz-linear-gradient(left, rgba(113,206,240,1) 0%, rgba(69,129,140,1) 41%, rgba(16,0,107,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(113,206,240,1)), color-stop(41%, rgba(69,129,140,1)), color-stop(100%, rgba(16,0,107,1)));
@@ -371,6 +374,7 @@
 .contend-wrapper{
 padding: 10px;
 font-style: 10px;
+overflow: auto;
 }
 .contend-wrapper{
     font-family: 'Solway', serif;
@@ -383,4 +387,7 @@ font-style: 10px;
 }
 .article-header{
     font-style: 1.5rem;
+}
+.article{
+    padding: 20px;
 }
