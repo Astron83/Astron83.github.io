@@ -4,6 +4,9 @@
 		<link rel="stylesheet" type="text/css" href="normalize.css" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<style>
+            *{
+                box-sizing: border-box;
+            }
 			.wrapper {
 				display: flex;
 				margin: 0;
@@ -104,6 +107,16 @@
                 object-fit: cover;
                 object-position: top;
             }
+            .achievement-wrapper{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .achievement, .achievement-empty{
+                flex-basis: 23%;
+                flex-shrink: 0;
+                min-width: 200px;
+            }
 		</style>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -120,15 +133,20 @@
 				<img class="img-circle" src="obr.01.jpg" alt="zdjęcie"> 
             </div>
             </div>
+            <div>
+                <p class="menu-element" data-name="Work">Praca</p>
+                <p class="menu-element" data-name="description">Opis</p>
+                <a href="#achievement">Osiągnięcia </a>
+            </div>
 			<p class="copyright">Copyright 2019©</p>
 		</nav>
 		<main class="content-wrapper">
 			<section>
 				<h2 class="section-header">O mnie</h2>
-				<article class="article">
+				<article class="article" id="description">
 					<h3 class="article-header">Opis</h3>
 					<p class="description">
-						Obecnie kontroler jakości z 10-cio letnim doświadczeniem. Pełnię funkcję inspektora podczas odbiorów zewnętrznych zarówno krajowych jak i zagranicznych. Zainteresowanie podróżami, chęć do poznawania nowych ludzi oraz doświadczenie w obsłudze aparatury pomiarowej pozwala mi wykonywac obowiązki z pasją. Dobrdziejstwo excela pozwoliło mi automatyzowac wiele czasochłonnych czynności co przyczyniło sie do rozwoju dodatkowych zainteresowań. Aktualnie poszerzam horyzonty o dodatkową wiedze i umiejętności z zakresu programowania w języku Python, bazami danych SQL i NoSQL, technologiami front i backendowymi.   
+						Obecnie kontroler jakości z 10-cio letnim doświadczeniem. Pełnię funkcję inspektora podczas odbiorów zewnętrznych zarówno krajowych jak i zagranicznych. Zainteresowanie podróżami, chęć poznawania nowych ludzi oraz doświadczenie w obsłudze aparatury pomiarowej pozwala mi wykonywac obowiązki z pasją. Dobrdziejstwo excela pozwoliło mi automatyzowac wiele czasochłonnych czynności co przyczyniło sie do rozwoju dodatkowych zainteresowań. Aktualnie poszerzam horyzonty o dodatkową wiedze i umiejętności z zakresu programowania w języku Python, baz danych SQL i NoSQL, technologiami front i backendowymi.   
 					</p>
 				</article>
 				<article class="article">
@@ -164,7 +182,7 @@
 						</p>
 					</div>
                 </article>
-                <article class="article">
+                <article id="Work" class="article">
                         <h3 class="article-header">Praca</h3>
                         <div class="school-wrapper">
                             <h4 class="school-title">HYDAC</h4>
@@ -185,12 +203,20 @@
                             </p>
                         </div>
                     </article>
-                    <article class="article">
-                        <h3 class="article-header" Osiągnięcia /h3>
-                        <div class="achiwvement">Lorem................................sadfasdfasdad</div>
-                        <div class="achiwvement">Lorem................................sadfasdfasdad</div>
-                        <div class="achiwvement">Lorem................................sadfasdfasdad</div>
-                        <div class="achiwvement">Lorem................................sadfasdfasdad</div>
+                    <article id="achievement" class="article">
+                        <h3 class="article-header" >Osiągnięcia </h3>
+                        <div class="achievement-wrapper">
+                        <div class="achievement">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus hic, explicabo, nobis facilis minus itaque consequatur aspernatur culpa nihil tempore alias distinctio assumenda obcaecati corrupti voluptates porro architecto sit? Quam!</div>
+                        <div class="achievement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nulla quae ullam. Sit amet sunt modi placeat laborum odio obcaecati eius praesentium commodi ea provident, labore id nobis quas voluptas.</div>
+                        <div class="achievement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ut aut voluptate similique, facere rerum deserunt cupiditate, possimus officia illum ipsam necessitatibus non sed ullam magni neque tenetur magnam pariatur!</div>
+                        <div class="achievement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi velit sequi voluptate distinctio ab exercitationem reiciendis consequatur tempora maiores neque labore sapiente repellat doloremque accusamus deserunt, totam est quaerat expedita!
+                        </div>
+                        <div class="achievement">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At distinctio laborum accusantium expedita qui ab eligendi voluptatum, nisi, inventore adipisci cupiditate ad est neque porro aliquid, optio veniam molestias laudantium!</div>
+                        <div class="achievement">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto tenetur, esse veniam necessitatibus placeat mollitia, sequi et porro eligendi praesentium repellendus, possimus quam fugiat harum enim perspiciatis autem ipsa? Cumque?</div>
+                        <div class="achievement-empty"></div>
+                        <div class="achievement-empty"></div>
+                        <div class="achievement-empty"></div>
+                    </div>
                     </article>
 			</section>
 		</main>
