@@ -1,66 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" type="text/css"
-    href="style.css"/>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>C_V</title>
-    <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
-    <script src="js.js"></script>
-</head>
-   
-<body class="wrapper">
-
-</body>
-    
-
-    <nav class="navigation">
-        <h1>Łukasz Furman</h1>
-        <p>Copyright 2019©</p>
-    </nav>
-    <main class="contend-wrapper">
-        <section>
-        <h2 class="cection-header">O mnie</h2>
-        <article class="article-heder">
-        <h3 class="article-header">Opis</h3>
-        <p class="opis">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis aperiam ratione a! Nemo ipsum reprehenderit praesentium sequi recusandae vero facere cum. Unde officiis minus exercitationem recusandae sunt debitis magni tempore!
-        </p>
-        </article>
-        </section>
-        <section>
-                <h3 class="cection-header">Zainteresowania:</h3>
-                <article class="article-heder">
-                <ul>
-                    <li>zainteresowania 1</li>
-                    <li>zainteresowania 2</li>
-                    <li>zainteresowania 3</li>
-                    <li>zainteresowania 4</li>
-                </ul>
-                </p>
+	<head>
+		<link rel="stylesheet" type="text/css" href="normalize.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<style>
+			.wrapper {
+				display: flex;
+				margin: 0;
+				height: 100vh;
+				overflow: hidden;
+			}
+			.navigation {
+				background-color: lightblue;
+				background: rgba(52, 247, 98, 1);
+				background: -moz-linear-gradient(
+					left,
+					rgb(9, 12, 206) 0%,
+					rgb(53, 138, 172) 49%,
+					rgb(101, 175, 235) 100%
+				);
+				background: -webkit-gradient(
+					left top,
+					right top,
+					color-stop(0%, rgba(52, 247, 98, 1)),
+					color-stop(49%, rgba(190, 199, 141, 1)),
+					color-stop(100%, rgba(141, 144, 199, 1))
+				);
+				background: -webkit-linear-gradient(
+					left,
+					rgb(9, 12, 206) 0%,
+				
+					rgb(101, 175, 235) 100%
+				);
+				background: -o-linear-gradient(
+					left,
+					rgb(9, 12, 206) 0%,
+				
+					rgb(101, 175, 235) 100%
+				);
+				background: -ms-linear-gradient(
+					left,
+					rgb(9, 12, 206) 0%,
+					
+					rgb(101, 175, 235) 100%
+				);
+				background: linear-gradient(
+					to right,
+					rgb(9, 12, 206) 0%,
+					
+					rgb(101, 175, 235) 100%
+				);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34f762', endColorstr='#8d90c7', GradientType=1 );
+				color: rgba(2, 2, 2, 0.822);
+				height: 150vh;
+				padding: 20px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			.content-wrapper {
+				overflow: auto;
+				padding: 10px;
+			}
+			.description {
+				font-family: 'Bebas Neue', Arial, cursive;
+				font-size: 1.3rem;
+				line-height: 1.5;
+				color: #080808;
+			}
+			.copyright {
+				text-align: center;
+			}
+			.section-header {
+				font-size: 2rem;
+			}
+			.article {
+				padding-left: 20px;
+			}
+			.article-header {
+				font-size: 1.5rem;
+			}
+			/*.school-wrapper:hover .school-description {
+				height: 100px;
+			}*/
+			.school-wrapper.active .school-description {
+				height: 100px;
+			}
+			.school-title {
+				background-color: lightgray;
+				border: 1px solid gray;
+				cursor: pointer;
+				padding: 10px;
+			}
+			.school-description {
+				height: 0;
+				overflow: hidden;
+				transition: all 0.5s ease-in-out;
+            }
+            .img-circle{
+                border-radius: 50%;
+                width: 160px;
+                height: 160px;
+                object-fit: cover;
+                object-position: top;
+            }
+		</style>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Moje CV</title>
+		<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet" />
+		<script src="js.js"></script>
+	</head>
+	<body class="wrapper">
+		<nav class="navigation">
+            <div>
+			<h1>Łukasz Furman</h1>
+			<div class="flex-pictures">
+				<img class="img-circle" src="obr.01.jpg" alt="zdjęcie"> 
+            </div>
+            </div>
+			<p class="copyright">Copyright 2019©</p>
+		</nav>
+		<main class="content-wrapper">
+			<section>
+				<h2 class="section-header">O mnie</h2>
+				<article class="article">
+					<h3 class="article-header">Opis</h3>
+					<p class="description">
+						Obecnie kontroler jakości z 10-cio letnim doświadczeniem. Pełnię funkcję inspektora podczas odbiorów zewnętrznych zarówno krajowych jak i zagranicznych. Zainteresowanie podróżami, chęć do poznawania nowych ludzi oraz doświadczenie w obsłudze aparatury pomiarowej pozwala mi wykonywac obowiązki z pasją. Dobrdziejstwo excela pozwoliło mi automatyzowac wiele czasochłonnych czynności co przyczyniło sie do rozwoju dodatkowych zainteresowań. Aktualnie poszerzam horyzonty o dodatkową wiedze i umiejętności z zakresu programowania w języku Python, bazami danych SQL i NoSQL, technologiami front i backendowymi.   
+					</p>
+				</article>
+				<article class="article">
+					<h3 class="article-header">Zainteresowania</h3>
+					<ul class="description">
+						<li>Programowanie :)</li>
+						<li>Modelowanie 3D i rendering</li>
+						<li>Podróże, poznawanie nowych miejsc</li>
+						<li>Militarne systemy walki</li>
+					</ul>
+				</article>
+			</section>
+			<section>
+				<h2 class="section-header">Kariera</h2>
+				<article class="article">
+					<h3 class="article-header">Nauka</h3>
+					<div class="school-wrapper">
+						<h4 class="school-title">Politechnika Śląska - Zarządzanie i Inżyneria Produkcji</h4>
+						<p class="school-description">
+							Wykształcenie z zakresu inżynierii produkcji oraz organizacji i zarządzania: przedsiębiorstwem, produkcją, kadrami, Środowiskiem i jakością pozwala nabyć umiejętności projektowania nowych procesów i systemów produkcyjnych, a także obiektów i systemów zarządzania. Dodatkowo pozwala dobierać i szkolić personel, dokonywać analizy i oceny osiąganych wyników, kontroli technicznej, a także zarządzać kosztami i projektami.
+						</p>
+					</div>
+					<div class="school-wrapper">
+						<h4 class="school-title">Politechnika Śląska - Edukacje Techniczno-Informatyczna</h4>
+						<p class="school-description">
+							Wykształcenie z zakresu informatyki oraz systemów informatycznych, budowy współczesnych komputerów i urządzeń z nimi współpracujących, systemów operacyjnych, sieci komputerowych, baz danych, inżynierii oprogramowania, sztucznej inteligencji, grafiki komputerowej i komunikacji człowiek-komputer, technik multimedialnych oraz komputerowej nauki o materiałach pozwala wykożystywac zdobyta wiedzę z zakresu fizyki, chemii, nauki o materiałach, projektowania materiałowego i doboru materiałów inżynierskich do zastosowań w różnych produktach, inżynierii wytwarzania, inżynierii materiałowej, budowy maszyn, a także technologii wytwarzania, przetwórstwa i recyklingu materiałów inżynierskich, metod kształtowania i badania ich struktury i własności oraz z zakresu zarządzania przemysłowego, zarządzania zasobami ludzkimi w różnych gałęziach przemysłu, administracji gospodarczej i nauce.
+						</p>
+					</div>
+					<div class="school-wrapper">
+						<h4 class="school-title">Software Development Academy - Python od podstaw</h4>
+						<p class="school-description">
+							Wiedza zdobyta na kursie "Python od podstaw" wzbogacona tematyką TDD (Test-Driven Development), obsługą rozproszonego systemu kontroli wersji GIT, tworzeniem i modyfikacja baz danych SQL i NoSQL, optymalizacją algorytmów, tworzeniem wirtualnych środowisk, znajomością struktur danych, znajomością technoligii frontendowych z podstawami HTML, CSS i JavaScript,  technologii backendowych z użyciem frameworku Django, zapoznanie sie z metodologia SCRUM i pracy zespołowej opartej o nią, nabyciem dobrych praktyk od profesjonalnych trenerów na codzień zajmujących sie tematyką IT pozwala wykożystywać nabyte umiejątności w szerokim spektrum sektorów informatyki.     
+						</p>
+					</div>
                 </article>
-                </section>
-                <section>
-                        <h3 class="cection-header">Kariera:</h3>
-                        <h4>Nauka</h4>
-                        <article class="article-heder">
-                       <div class="school-wrapper">
-                           <h4 class="school-title">Kurs Python</h4>
-                           <p class="school-description">Kurs obejmował.....</p>
-                       </div>
-                       <div class="school-wrapper">
-                           <h4 class="school-title">Kurs SQL</h4>
-                           <p class="school-description">Kurs obejmował.....</p>
-                       </div>
-                       <div class="school-wrapper">
-                           <h4 class="school-title">Kurs Frontend </h4>
-                           <p class="school-description">Kurs obejmował.....</p>
-                       </div>
-                        </p>
-                        </article>
-                        </section>
-    </main>
-    
+                <article class="article">
+                        <h3 class="article-header">Praca</h3>
+                        <div class="school-wrapper">
+                            <h4 class="school-title">HYDAC</h4>
+                            <p class="school-description">
+                                    Kontroler jakości    bla bla bla
+                            </p>
+                        </div>
+                        <div class="school-wrapper">
+                            <h4 class="school-title">Schneider Electric Energy</h4>
+                            <p class="school-description">
+                                    Kontroler jakości    bla bla bla
+                            </p>
+                        </div>
+                        <div class="school-wrapper">
+                            <h4 class="school-title">AREVA</h4>
+                            <p class="school-description">
+                               Kontroler jakości    bla bla bla
+                            </p>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <h3 class="article-header" Osiągnięcia /h3>
+                        <div class="achiwvement">Lorem................................sadfasdfasdad</div>
+                        <div class="achiwvement">Lorem................................sadfasdfasdad</div>
+                        <div class="achiwvement">Lorem................................sadfasdfasdad</div>
+                        <div class="achiwvement">Lorem................................sadfasdfasdad</div>
+                    </article>
+			</section>
+		</main>
+	</body>
 </html>
