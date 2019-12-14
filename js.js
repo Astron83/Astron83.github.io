@@ -1,9 +1,17 @@
 function init() {
 	document.querySelectorAll('.school-title').forEach(item => item.addEventListener('click', showDescription));
 	document.querySelectorAll(".menu-element").forEach(item => item.addEventListener("click", scrollToElement));
-	document.querySelector("#"+event.target.dataset.name).scrollIntoView({
-		behavior: "smooth"
-	});
+	
+	var swiper = new Swiper('.swiper-container', {
+		pagination: {
+		  el: '.swiper-pagination',
+		  type: 'progressbar',
+		},
+		navigation: {
+		  nextEl: '.swiper-button-next',
+		  prevEl: '.swiper-button-prev',
+		},
+	  });
 }
 
 function showDescription(event) {
